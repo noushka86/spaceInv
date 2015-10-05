@@ -11,7 +11,7 @@ var self=this;
 //http://www.soundjay.com/mechanical/sounds/gun-gunshot-02.mp3
 //http://www.soundjay.com/human/sounds/fart-01.mp3
 //http://www.soundjay.com/human/sounds/fart-03.mp3
-loadSound("http://www.soundjay.com/human/sounds/burp-1.mp3",function(shootSound){
+loadSound("http://soundfxcenter.com/television/south-park/087332_South_Park_Cartman_Kick_Ass_Sound_Effect.mp3",function(shootSound){
 	self.shootSound= shootSound;
 	var tick=function(){
 	self.update()
@@ -68,7 +68,7 @@ invadersBelow:function(invader){
 
 var Player=function(game,gameSize){
 this.game=game;
-this.size={x:40,y:40};
+this.size={x:50,y:50};
 this.center={x:gameSize.x/2,y:gameSize.y-this.size.y};
 this.keyboarder=new Keyboarder();
 }
@@ -153,9 +153,9 @@ update:function(){
 
 
 var drawInvader=function(screen,body){
-
+//http://icons.iconarchive.com/icons/iconka/buddy/128/devil-male-icon.png     
      var img = new Image();
-     img.src="http://icons.iconarchive.com/icons/iconka/buddy/128/devil-male-icon.png";
+     img.src="http://findicons.com/files/icons/214/south_park/128/kenny_128_x.png";
 	screen.drawImage(img,body.center.x-body.size.x/2,body.center.y-body.size.y/2, body.size.x, body.size.y);
 
 
@@ -170,7 +170,7 @@ var drawInvader=function(screen,body){
 var drawPlayer=function(screen,body){
 
      var img = new Image();
-     img.src="http://icons.iconarchive.com/icons/iconka/buddy/128/devil-female-icon.png";
+     img.src="http://icons.iconarchive.com/icons/sykonist/south-park/128/Cartman-Ninja-zoomed-icon.png";
 	screen.drawImage(img,body.center.x-body.size.x/2,body.center.y-body.size.y/2, body.size.x, body.size.y);
 
 
